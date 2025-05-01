@@ -1,0 +1,18 @@
+.center{
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.mouse{
+    margin: auto;
+    margin-bottom: 30px;
+    width:200px;
+    height:200px;
+    background-color:lightgray;
+}
+
+.imagen{
+    width: 400px;
+    height: 500px;
+}
