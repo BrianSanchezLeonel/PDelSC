@@ -1,0 +1,76 @@
+/* Wrapper flexible */
+.scoreboard-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* por defecto a la derecha */
+  transform: translateY(-50%);
+  width: 350px;
+  max-width: 90%;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+/* Card principal */
+.scoreboard-card {
+  background-color: #000;
+  border: 2px solid rgb(0, 68, 255);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(10, 108, 245), inset 0 0 15px #050434;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Header */
+.scoreboard-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.scoreboard-header h5 {
+  color: #ff0;
+  font-size: 0.8rem;
+  margin: 0;
+  text-shadow: 1px 1px #f00;
+}
+
+/* Lista de scores */
+.scoreboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scoreboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 0.65rem;
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+
+.score-rank { width: 20px; color: #ff0; }
+.score-user { flex: 1; text-align: left; padding-left: 5px; }
+.score-points { width: 50px; text-align: right; color: #0ff; }
+.score-level { width: 50px; text-align: center; color: #f00; }
+.score-time { width: 50px; text-align: right; color: #ff0; }
+
+.scoreboard-item:hover {
+  background-color: #111;
+  box-shadow: 0 0 5px #ff0, 0 0 10px #0ff inset;
+}
+
+/* Pantallas entre 1200px y 770px */
+@media (max-width: 1030px) {
+  .scoreboard-wrapper{
+      position: absolute;
+      top: 140%;
+      transform: translateY(-50%);
+      width: 530px;
+      z-index: 10;
+      right: auto;
+      transition: all 0.3s ease;
+  }
+}

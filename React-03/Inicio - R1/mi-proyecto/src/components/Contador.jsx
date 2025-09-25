@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Contador() {
   const [contador, setContador] = useState(0);
@@ -18,6 +18,12 @@ export default function Contador() {
           onClick={() => setContador(contador - 1)}
         >
           Decrementar
+        </button>
+        <button
+          className="btn btn-secondary m-2"
+          onClick={() => setContador(0)}
+        >
+          Reiniciar
         </button>
       </div>
     </div>

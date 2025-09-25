@@ -1,6 +1,6 @@
 import './views/App.css';
 import HolaMundo from './components/HolaMundo';
-import TarjetaPresentacion from './components/Tarjeta';
+import TarjetaPresentacion from './components/TarjetaPresentacion';
 import Contador from './components/Contador';
 import ListaTareas from './components/ListaTareas';
 import Formulario from './components/Formulario';
@@ -16,8 +16,8 @@ function App() {
         imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3kr6U2mtXnpEeI1azMN6vw-Ppoi3FfoU8tg&s"
       />
       <Contador/>
-      <ListaTareas/>
       <Formulario/>
+      <ListaTareas/>
     </div>
   );
 }
